@@ -29,7 +29,7 @@
 */
 .split4 > *,
 .split1and2of4 > *:first-child,
-.split3and4of4 > *:first-child {
+.split3and4of4 > *:last-child {
 	width: 23.5%;
 }
 
@@ -89,6 +89,7 @@
   background:#f00;
 }
 
-.group div:last-child {
-  background:#0f0;
-}
+.one,
+.two,
+.three,
+.four { background:#0f0; }
