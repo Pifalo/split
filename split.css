@@ -2,19 +2,93 @@
 	width: 49%;
 }
 
-.split3 > * {
+
+
+/*
+========================================
+	Split 3
+========================================
+*/
+.split3 > *,
+.split1and2of3 > *:first-child,
+.split2and3of3 > *:last-child {
+	width: 32%;
+}
+
+.split1and2of3 > *:last-child,
+.split2and3of3 > *:first-child {
+	width: 66%;
+}
+
+
+
+/*
+========================================
+	Split 4
+========================================
+*/
+.split4 > *,
+.split1and2of4 > *:first-child,
+.split3and4of4 > *:first-child {
+	width: 23.5%;
+}
+
+.split1and2of4 > *:last-child,
+.split3and4of4 > *:first-child {
+	width: 74.5%;
+}
+
+.split1and2of4.split3and4of4{
 	width: ;
 }
 
+
+
+/*
+========================================
+	Pad columns
+========================================
+*/
 .split2 > *,
 .split3 > *,
-.split4 > * {
+.split4 > *,
+.split1and2of3 > *:first-child,
+.split2and3of3 > *:first-child,
+.split1and2of4 > *:first-child,
+.split3and4of4 > *:first-child {
 	margin-right: 2%;
 }
 
+
+
+/*
+========================================
+	Clear last
+========================================
+*/
 .split2 > *:last-child,
 .split3 > *:last-child,
-.split4 > *:last-child {
+.split4 > *:last-child,
+.split1and2of3 > *:last-child,
+.split2and3of3 > *:last-child,
+.split1and2of4 > *:last-child,
+.split3and4of4 > *:last-child {
 	margin: 0;
 }
 
+
+
+.group {
+  width:100%;
+  clear:both;
+}
+
+.group div {
+  height:40px;
+  float:left;
+  background:#f00;
+}
+
+.group div:last-child {
+  background:#0f0;
+}
