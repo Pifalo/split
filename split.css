@@ -1,8 +1,20 @@
 .split2 > * {
 	width: 49%;
-	padding-right: 2%;
 }
 
-.split2 > *:last-child {
-	padding: 0;
+.split3 > * {
+	width: ;
 }
+
+.split2 > *,
+.split3 > *,
+.split4 > * {
+	margin-right: 2%;
+}
+
+.split2 > *:last-child,
+.split3 > *:last-child,
+.split4 > *:last-child {
+	margin: 0;
+}
+
