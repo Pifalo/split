@@ -1,0 +1,8 @@
+.split2 > * {
+	width: 49%;
+	padding-right: 2%;
+}
+
+.split2 > *:last-child {
+	padding: 0;
+}
