@@ -16,7 +16,15 @@
     margin-left: 4%;
 }
 
+.split2 .split1and2of3 > * {
+    width: 64%;
+    margin-left: 4%;
+}
 
+.split2 .split2and3of3 > * {
+    width: 30%;
+    margin-left: 4%;
+}
 
 /*
     ========================================
@@ -56,7 +64,7 @@
 }
 
 
-/*coming soon*/
+/*coming soon'ish - 1|23|4*/
 .split1and2of4.split3and4of4 {}
 
 
@@ -74,6 +82,9 @@
 .split1and2of4 > *,
 .split3and4of4 > * {
 	margin-left: 2%;
+  /*IE7 hack*/
+  *left: 2%;
+  *padding-bottom: 2%;
 }
 
 
@@ -92,6 +103,8 @@
 .split3and4of4 > *:first-child,
 .split2 .split2 > *:first-child {
 	margin: 0;
+  /*IE7 hack*/
+  *left: 0 !important;
 }
 
 
